@@ -676,7 +676,7 @@ svg { width: 20px; fill: currentColor; }
   .cta h2 { font-size: 29px; }
   .floating-contact { display: grid; }
 }/* ===== 모바일 화면 최종 보정 ===== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   html,
   body {
     width: 100%;
