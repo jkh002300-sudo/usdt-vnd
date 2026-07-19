@@ -27,14 +27,10 @@ function updateVnd() {
 function updateRateDisplay() {
   const formattedRate = formatNumber(RATE);
 
-  // HTML에 해당 ID가 있으면 자동으로 환율 표시를 변경합니다.
-  const rateElements = document.querySelectorAll(
-    "#exchangeRate, #rateText, #exampleRate, [data-exchange-rate]"
-  );
-
-  rateElements.forEach((element) => {
-    element.textContent = `1 USDT ≈ ${formattedRate} VND`;
-  });
+  const rateText = document.querySelector("#rateText");
+  if (rateText) {
+    rateText.textContent = formattedRate;
+  }
 }
 
 async function loadBinanceRate() {
