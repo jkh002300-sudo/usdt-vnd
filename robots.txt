@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jkh002300-sudo.github.io/usdt-vnd/sitemap.xml
