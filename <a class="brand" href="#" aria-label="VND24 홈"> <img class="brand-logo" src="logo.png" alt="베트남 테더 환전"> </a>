@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -22,7 +23,6 @@
     <nav class="nav container">
   <a class="brand" href="#" aria-label="VND24 홈">
   <img class="brand-logo" src="logo.png" alt="베트남 테더 환전">
-</a>
 </a>
 
       <div class="nav-links">
