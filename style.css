@@ -675,54 +675,144 @@ svg { width: 20px; fill: currentColor; }
 
   .cta h2 { font-size: 29px; }
   .floating-contact { display: grid; }
-}
-/* ===== Mobile Fix ===== */
-@media (max-width:768px){
+}/* ===== 모바일 화면 최종 보정 ===== */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
-.feature-grid{
-display:grid !important;
-grid-template-columns:1fr !important;
-gap:20px;
-}
+  .container {
+    width: calc(100% - 32px) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
-.feature-card{
-width:100% !important;
-padding:24px;
-min-height:auto;
-}
+  .nav {
+    width: calc(100% - 32px) !important;
+  }
 
-.feature-card h3{
-font-size:28px;
-line-height:1.3;
-word-break:keep-all;
-}
+  .nav-links {
+    display: none !important;
+  }
 
-.feature-card p{
-font-size:16px;
-line-height:1.8;
-word-break:keep-all;
-}
+  .hero {
+    width: calc(100% - 32px) !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 36px !important;
+    padding: 56px 0 70px !important;
+  }
 
-.steps{
-display:grid !important;
-grid-template-columns:1fr !important;
-}
+  .hero-copy {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
 
-.hero{
-display:grid !important;
-grid-template-columns:1fr !important;
-gap:40px;
-}
+  .status-pill {
+    width: fit-content !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
 
-.exchange-card{
-width:100%;
-}
+  .hero h1 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px 0 18px !important;
+    font-size: 42px !important;
+    line-height: 1.18 !important;
+    letter-spacing: -2px !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+  }
 
-.logo-strip_inner,
-.logo-strip-inner{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
+  .hero-description {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    word-break: keep-all !important;
+  }
 
+  .hero-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .hero-actions .button {
+    width: 100% !important;
+  }
+
+  .trust-row {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .trust-row div {
+    min-width: 0 !important;
+  }
+
+  .exchange-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .feature-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .feature-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: auto !important;
+    padding: 24px !important;
+  }
+
+  .feature-card h3,
+  .feature-card p {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  .steps {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .step-arrow {
+    display: none !important;
+  }
+
+  .faq-layout {
+    grid-template-columns: 1fr !important;
+    gap: 44px !important;
+  }
+
+  .logo-strip__inner {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    text-align: center !important;
+  }
 }
