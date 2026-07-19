@@ -598,15 +598,12 @@ svg { width: 20px; fill: currentColor; }
 
 .floating-contact svg { width: 25px; }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .75s ease, transform .75s ease;
-}
-
+.reveal,
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  transition: none;
+}
 }
 
 @media (max-width: 960px) {
