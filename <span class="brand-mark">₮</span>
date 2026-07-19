@@ -21,7 +21,7 @@
   <header class="nav-wrap">
     <nav class="nav container">
       <a class="brand" href="#" aria-label="VND24 홈">
-        <span class="brand-mark">₮</span>
+        <img class="brand-logo" src="logo.png" alt="베트남 테더 환전">
         <span>VND<span class="brand-accent">24</span></span>
       </a>
 
@@ -296,7 +296,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a class="brand" href="#">
-        <span class="brand-mark">₮</span>
+        <img class="brand-logo" src="logo.png" alt="베트남 테더 환전">
         <span>VND<span class="brand-accent">24</span></span>
       </a>
       <p>
